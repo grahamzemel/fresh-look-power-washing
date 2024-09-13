@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(180deg, #60a5fa, #43c6ac, #60a5fa);
+}
+/* Define different color classes based on Tailwind or your custom CSS */
+.bg-blue-400 {
+    background-color: #60a5fa; /* Tailwind blue-400 */
+}
+
+.bg-blue-300 {
+    background-color: #93c5fd; /* Tailwind blue-300 */
+}
+
+.bg-blue-200 {
+    background-color: #bfdbfe; /* Tailwind blue-200 */
+}
+
+.bg-teal-100 {
+    background-color: #d1fae5; /* Tailwind teal-100 */
+}
+
+.bg-teal-200 {
+    background-color: #a7f3d0; /* Tailwind teal-200 */
+}
+
+.bg-teal-300 {
+    background-color: #6ee7b7; /* Tailwind teal-300 */
+}
+
+.bg-teal-400 {
+    background-color: #34d399; /* Tailwind teal-400 */
+}
+
+.bg-blue-100 {
+    background-color: #dbeafe; /* Tailwind blue-100 */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+.image-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-pair img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
