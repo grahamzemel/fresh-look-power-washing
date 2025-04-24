@@ -120,22 +120,22 @@
 <section id="contact" class="bg-gradient-to-b from-blue-500 to-blue-200 py-6 text-white mx-8 rounded-xl shadow-lg">
     <div class="container mx-auto px-16 py-12">
         <h2 class="text-4xl font-bold mb-12 text-center">Contact Us</h2>
-        <form on:submit|preventDefault={handleSubmit} class="max-w-lg mx-auto space-y-6">
+        <form action="https://formsubmit.co/chg11235@gmail.com" method="POST" class="max-w-lg mx-auto space-y-6">
             <div>
                 <label for="name" class="block mb-2">Name:</label>
-                <input type="text" id="name" bind:value={name} required class="w-full p-3 rounded-lg text-black" />
+                <input type="text" id="name" name="name" bind:value={name} required class="w-full p-3 rounded-lg text-black" />
             </div>
             <div>
                 <label for="email" class="block mb-2">Email:</label>
-                <input type="email" id="email" bind:value={email} required class="w-full p-3 rounded-lg text-black" />
+                <input type="email" id="email" name="email" bind:value={email} required class="w-full p-3 rounded-lg text-black" />
             </div>
             <div>
                 <label for="phone" class="block mb-2">Phone:</label>
-                <input type="tel" id="phone" bind:value={phone} required class="w-full p-3 rounded-lg text-black" />
+                <input type="tel" id="phone" name="phone" bind:value={phone} required class="w-full p-3 rounded-lg text-black" />
             </div>
             <div>
                 <label for="service" class="block mb-2">Service:</label>
-                <select id="service" bind:value={service} required class="w-full p-3 rounded-lg text-black">
+                <select id="service" name="service" bind:value={service} required class="w-full p-3 rounded-lg text-black">
                     <option value="">Select a service</option>
                     {#each services as serviceOption}
                         <option value={serviceOption}>{serviceOption}</option>
@@ -144,16 +144,19 @@
             </div>
             <div>
                 <label for="message" class="block mb-2">Message:</label>
-                <textarea id="message" bind:value={message} rows="4" class="w-full p-3 rounded-lg text-black"></textarea>
+                <textarea id="message" name="message" bind:value={message} rows="4" class="w-full p-3 rounded-lg text-black"></textarea>
             </div>
             <div>
                 <label for="date" class="block mb-2">Preferred Date:</label>
-                <input type="date" id="date" bind:value={date} required class="w-full p-3 rounded-lg text-black" />
+                <input type="date" id="date" name="date" bind:value={date} required class="w-full p-3 rounded-lg text-black" />
             </div>
             <div>
                 <label for="time" class="block mb-2">Preferred Time:</label>
-                <input type="time" id="time" bind:value={time} required class="w-full p-3 rounded-lg text-black" />
+                <input type="time" id="time" name="time" bind:value={time} required class="w-full p-3 rounded-lg text-black" />
             </div>
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you">
+            <input type="hidden" name="_captcha" value="false">
+
             <button type="submit" class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl hover:bg-teal-700 transition-colors">
                 Send Message
             </button>
@@ -163,3 +166,4 @@
 
 <!-- Footer Wave Divider -->
 <div class="w-full h-16 bg-wave-pattern"></div>
+<!-- chg11235@gmail.com -->
