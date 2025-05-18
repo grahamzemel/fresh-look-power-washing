@@ -26,10 +26,10 @@
     }
 
     const imagePairs = [
-        { before: 'https://v0.dev/placeholder.svg?height=200&width=200', after: 'https://v0.dev/placeholder.svg?height=200&width=200' },
-        { before: 'https://v0.dev/placeholder.svg?height=200&width=200', after: 'https://v0.dev/placeholder.svg?height=200&width=200' },
-        { before: 'https://v0.dev/placeholder.svg?height=200&width=200', after: 'https://v0.dev/placeholder.svg?height=200&width=200' },
-        { before: 'https://v0.dev/placeholder.svg?height=200&width=200', after: 'https://v0.dev/placeholder.svg?height=200&width=200' },
+        { before: '/IMG_0395.JPG', after: '/IMG_0396.JPG' },
+        { before: '/IMG_0397.JPG', after: '/IMG_0398.JPG' },
+        { before: '/IMG_0399.JPG', after: '/IMG_0400.JPG' },
+        { before: '/IMG_0401.JPG', after: '/IMG_0402.JPG' },
     ];
 
     onMount(() => {
@@ -47,7 +47,10 @@
     <div class="container mx-auto px-16 py-12 flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
         <div class="md:w-1/2 text-center md:text-left">
             <h1 class="text-5xl font-bold mb-6 text-gray-800">Welcome to Fresh Look Power Washing</h1>
-            <p class="text-lg mb-8 text-gray-700">Get a fresh look for your home or business with our professional power washing services.</p>
+            <p class="text-lg mb-8 text-gray-700">Hi, we’re Max Magliari and Chase Goldoor of Fresh Look Power Washing! 
+                We are graduates of Germantown Academy now enrolled at CU Boulder and Syracuse University. 
+                This is our 3rd year in business and we’ve done 50+ jobs together. Our experience has taught us to be efficient, flexible, and always put the customers first. 
+                100% satisfaction guaranteed! If you’re not completely happy with the results, we’ll gladly return and make it right.</p>
             <button class="bg-teal-600 text-white px-8 py-4 rounded-lg text-xl hover:bg-teal-700 transition-colors" on:click={() => window.location.hash = 'contact'}>
                 Get a Quote
             </button>
@@ -120,7 +123,7 @@
 <section id="contact" class="bg-gradient-to-b from-blue-500 to-blue-200 py-6 text-white mx-8 rounded-xl shadow-lg">
     <div class="container mx-auto px-16 py-12">
         <h2 class="text-4xl font-bold mb-12 text-center">Contact Us</h2>
-        <form action="https://formsubmit.co/chg11235@gmail.com" method="POST" class="max-w-lg mx-auto space-y-6">
+        <form action="https://formsubmit.co/freshlook.powerwashing.company@gmail.com" method="POST" class="max-w-lg mx-auto space-y-6">
             <div>
                 <label for="name" class="block mb-2">Name:</label>
                 <input type="text" id="name" name="name" bind:value={name} required class="w-full p-3 rounded-lg text-black" />
